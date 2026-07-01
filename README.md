@@ -2,7 +2,7 @@
 
 **AWS Services Used:** IAM, EC2  
 **Difficulty:** Beginner  
-**Project Source:** [NextWork AWS Security IAM](https://nextwork.ai/projects/aws-security-iam)
+
 
 ---
 
@@ -131,4 +131,4 @@ The restricted user also had access denied to Security Hub and Service Catalog, 
 ## Connect
 
 **GitHub:** [github.com/lou7776](https://github.com/lou7776)  
-**LinkedIn:** *(add your LinkedIn URL here)*
+**LinkedIn:linkedin.com/in/lucious-lokko
