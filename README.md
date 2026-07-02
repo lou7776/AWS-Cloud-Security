@@ -140,7 +140,7 @@ After saving the policy, attach it to the group:
 
 `IAM → User Groups → work-dev-group → Permissions → Add permissions → Attach policies`
 
-![Attach Policy](screenshots/06-attach-policy.png)
+![Attach Policy](screenshots/06-attach-policy)
 
 ---
 
@@ -154,7 +154,7 @@ During the launch wizard under **Name and tags**, I added:
 
 Tag values are case-sensitive. `Development` and `development` are not the same thing to AWS. The policy uses lowercase `development` so the tag has to match exactly.
 
-![EC2 Instances](screenshots/07-ec2-instances.png)
+![EC2 Instances](screenshots/07-ec2-instances.webp)
 
 ---
 
@@ -168,14 +168,14 @@ Before logging in as the restricted user, I ran tests in the IAM Policy Simulato
 
 StopInstances → allowed
 
-![Simulator Allowed](screenshots/08-simulator-allowed.png)
+![Simulator Allowed](screenshots/08-simulator-allowed.webp)
 
 **Without the tag context:**
 
 StopInstances → denied (implicit — no Allow matches without the tag)
 DeleteTags → denied (explicit — the Deny statement fires regardless)
 
-![Simulator Denied](screenshots/09-simulator-denied.png)
+![Simulator Denied](screenshots/09-simulator-denied.webp)
 
 The distinction between implicit and explicit denial matters in practice. An implicit deny means no policy matched — you'd fix it by adding a permission. An explicit deny means something actively blocked it — adding a permission won't help, you'd need to remove or narrow the Deny.
 
@@ -187,7 +187,7 @@ Signed in as `work-dev-luc` and tried to stop `nextwork-prod-luc`. Exactly what 
 
 The restricted user also had no access to Security Hub, Service Catalog, or anything outside the explicitly granted EC2 development scope:
 
-![Security Hub Denied](screenshots/10-security-hub-denied.png)
+![Security Hub Denied](screenshots/10-security-hub-denied.webp)
 
 ---
 
