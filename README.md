@@ -83,8 +83,8 @@ One thing worth knowing: account aliases are globally unique across all AWS acco
 
 Created a user (`work-dev-luc`) to represent a developer, then created a group (`work-dev-group`) and added the user to it. All permissions go on the group, not the user directly — that way if you need to add another developer later, you just add them to the group.
 
-![Create User](screenshots/03-create-user.png)
-![User Group](screenshots/04-user-group.png)
+![Create User](screenshots/03-create-user.webp)
+![User Group](screenshots/04-user-group.webp)
 
 ---
 
