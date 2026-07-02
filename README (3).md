@@ -2,7 +2,7 @@
 
 A hands-on cloud security project where I configured AWS IAM to enforce least-privilege access across a simulated production/development environment. The goal was straightforward: a developer should only be able to interact with development resources, and no amount of creativity on their part should let them touch production.
 
-![Access Denied](screenshots/01-access-denied copy.png)
+![Access Denied](screenshots/01-access-deniedcopy.png)
 *IAM user work-dev-luc blocked from stopping a production EC2 instance — policy working as intended*
 
 ---
